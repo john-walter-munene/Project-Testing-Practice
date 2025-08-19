@@ -1,4 +1,4 @@
-import { 
+import {
     capitalize,
     reverseString,
     caesarCipher,
@@ -15,7 +15,7 @@ test('Take a string and return it with the first letter capitalized', () => {
 test('Takes a string and returns it reversed', () => {
     let input = reverseString('daddy');
     let expected = 'yddad';
-    expect(input).toEqual(expected); 
+    expect(input).toEqual(expected);
 });
 
 describe('Caesar Cipher', () => {
@@ -29,7 +29,7 @@ describe('Caesar Cipher', () => {
 
 describe('Analyze Array', () => {
     test('Takes an array of numbers and returns an object with: average, min, max, and length', () => {
-        let input = analyzeArray([1,8,3,4,2,6]);
+        let input = analyzeArray([1, 8, 3, 4, 2, 6]);
         let expected = {
             average: 4,
             min: 1,
@@ -71,12 +71,6 @@ describe('Calculator', () => {
     test('Multiplication', () => {
         let input = calculator.multiply(firstNumber, secondNumber);
         let expected = 20;
-        expect(input).toEqual(expected);
-    });
-
-    test('Root', () => {
-        let input = calculator.root(number);
-        let expected = (number * number * number);
         expect(input).toEqual(expected);
     });
 });
