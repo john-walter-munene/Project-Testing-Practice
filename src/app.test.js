@@ -73,4 +73,10 @@ describe('Calculator', () => {
         let expected = 20;
         expect(input).toEqual(expected);
     });
+
+    test('Root', () => {
+        let input = calculator.root(number);
+        let expected = (number * number * number);
+        expect(input).toEqual(expected);
+    });
 });
